@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="cvb"></p>
+    <input type="text" name="" id="a">
+    <button onclick="salamla()">ok</button>
+   <h1 id="cvb2"></h1>
+   <p id="massiv"></p>
+      <p  id="cvb3"></p>
+         <p id="cvb4"></p>
+   <script>
+                 const cvb=document.getElementById('cvb')
+                      const arr=["Emma","Liam","Olivia","Noah","Ava"]
+        let kod=' '
+         const cvb4=document.getElementById('cvb4')
+                          const cvb3=document.getElementById('cvb3')
+            const massiv=document.getElementById('massiv')
+      
+                          //1ci task
+        for(let i=0;i<arr.length;i++){
+          kod+=`${arr[i]}<br> `
+        }
+          cvb.innerHTML=kod
+          //2ci task
+          function salamla(){
+                const cvb2=document.getElementById('cvb2')
+ const a=document.getElementById('a')
+          let yazi=["Salam"]
+             yazi.unshift(a.value)
+          yazi.push(a.value)
+          yazi.join(',')
+cvb2.innerHTML=yazi
+        }
+             //3cu task
+            
+                  const sira=[-3,-2,56,8,0,9,10]
+                     massiv.innerHTML="Array: "+sira
+                  sira.sort()
+cvb3.innerHTML="sortla :"+sira
+    //4cu task
+                    const sira2=[-3,-2,56,8,0,9,10]
+                    sira2.reverse()
+cvb4.innerHTML="reverse :"+sira2
+
+    </script>
+</body>
+</html>
