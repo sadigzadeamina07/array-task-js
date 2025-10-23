@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,13 +13,18 @@
    <p id="massiv"></p>
       <p  id="cvb3"></p>
          <p id="cvb4"></p>
+            <h3 id="cvb5"></h3>
+         <input type="text" id="b">
+         <h3 id="cvb6"></h3>
    <script>
                  const cvb=document.getElementById('cvb')
                       const arr=["Emma","Liam","Olivia","Noah","Ava"]
         let kod=' '
          const cvb4=document.getElementById('cvb4')
                           const cvb3=document.getElementById('cvb3')
-            const massiv=document.getElementById('massiv')
+           
+                            const cvb5=document.getElementById('cvb5')
+                      const massiv=document.getElementById('massiv')
       
                           //1ci task
         for(let i=0;i<arr.length;i++){
@@ -46,7 +51,18 @@ cvb3.innerHTML="sortla :"+sira
                     const sira2=[-3,-2,56,8,0,9,10]
                     sira2.reverse()
 cvb4.innerHTML="reverse :"+sira2
-
+//vahid m taski
+let kod2=' '
+let sira3=["əminə"]
+for(let i=0;i<sira3.length;i++){
+  for(let j=0;j<sira3[i].length;j++){
+kod2+=sira3[i].slice(0,j)
++sira3[i].charAt(j).toUpperCase()
++sira3[i].slice(j+1)
++'<br>'
+  }
+}
+cvb5.innerHTML=kod2
     </script>
 </body>
 </html>
