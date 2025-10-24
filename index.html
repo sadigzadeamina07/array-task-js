@@ -15,6 +15,7 @@
          <p id="cvb4"></p>
             <h3 id="cvb5"></h3>
          <input type="text" id="b">
+             <button onclick="reng()">ok</button>
          <h3 id="cvb6"></h3>
    <script>
                  const cvb=document.getElementById('cvb')
@@ -25,7 +26,8 @@
            
                             const cvb5=document.getElementById('cvb5')
                       const massiv=document.getElementById('massiv')
-      
+           const cvb6=document.getElementById('cvb6')
+             
                           //1ci task
         for(let i=0;i<arr.length;i++){
           kod+=`${arr[i]}<br> `
@@ -53,7 +55,6 @@ cvb3.innerHTML="sortla :"+sira
 cvb4.innerHTML="reverse :"+sira2
 //vahid m taski
 let kod2=' '
-let sira3=["əminə"]
 for(let i=0;i<sira3.length;i++){
   for(let j=0;j<sira3[i].length;j++){
 kod2+=sira3[i].slice(0,j)
@@ -63,6 +64,17 @@ kod2+=sira3[i].slice(0,j)
   }
 }
 cvb5.innerHTML=kod2
+
+function reng(){
+  const b=document.getElementById('b').value
+let kod3=' '
+for(let i=0;i<b.length;i++){
+let color=`rgb(${Math.round(Math.random()*256)},${Math.round(Math.random()*256)},${Math.round(Math.random()*256)})`
+kod3+=`<span style="color:${color}">${b[i]}</span>`
+}
+cvb6.innerHTML=kod3
+}
+
     </script>
 </body>
 </html>
